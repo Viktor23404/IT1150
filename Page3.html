@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<meta charset="utf-8">
+<title>Phone Shop - Order Page</title>
+<style>
+body {
+	background-color: black;
+}
+h1 {
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	font-family: verdana;
+}
+select, label {
+	font-size: 30px;
+}	
+label {
+	color: white;
+}
+
+.test{
+    height:50px;
+    width:100px;
+	margin-left: 22.8%;
+}
+img {
+	margin-right: 0px; 
+}
+div{
+	color: white;
+	font-family: verdana;
+    font-size: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	border-radius: 8px;
+	padding: 0px;
+	margin: auto;
+	width: 98%;
+	
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+<h1> Order Now!!!</h1>
+<form>
+  <label for="phones">Pick a Phone:</label>
+  <select id="phones" name="phones">
+    <option value="iPhone14">iPhone 14</option>
+    <option value="iPhone14_pro">iPhone 14 Pro</option>
+    <option value="iPhone14_pro_max">iPhone 14 Pro Max</option>
+  </select>
+</form>
+<button class="test" onclick="alert('Purchase Confirmed :)')">Buy Now!</button>
+<div>
+<img src="fedora.png" alt= "Emoji" style="width:600px;height:500px;">
+	<ul>
+		<li><a href="Lab2.html">Home</a></li>
+		<li><a href="Page2.html">Shopping Selection</a></li>
+		<li><a href="Page3.html">Order</a></li>
+</ul>
+</div>
+</body>
+</html>

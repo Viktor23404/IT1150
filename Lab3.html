@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Emoji Maker</title>
+
+<style>
+
+h1
+{
+color: Darkblue;
+}
+
+.centered
+{
+text-align: center;
+}
+
+.divcolor
+{
+background-color: lightgreen;
+}
+
+.faceoverlap
+{
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
+.facecontainer
+{
+position: relative;
+height: 320px;
+width: 320px;
+border: solid blue 4px;
+}
+button
+{
+	background-color: DarkSlateBlue;
+	color: Khaki;
+	border: solid Khaki 6px;
+	font-size: 20px;
+	padding: 10px;
+	margin: 6px;
+	border-radius: 8px;
+}
+
+.ccButtons
+{
+	text-align: center;
+	background-color: lightblue;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1 class="centered" id="theHeading" onclick=HeadingClicked()>Emoji Maker :)</h1>
+<hr>
+
+<div class="divcolor">
+
+<p>
+Create Your Own Emoji :).
+</p>
+
+<div class="facecontainer">
+<img id= "layout" class="faceoverlap" src="Lab3_Images/emoji_layout.png" alt= "emoji_layout">
+<img id="face" class="faceoverlap" src="Lab3_Images/happy_smile.png" alt= "happy_smile">
+<img id="eyes" class="faceoverlap" src="Lab3_Images/angry_eyebrows.png" alt= "sad_eyebrows">
+<img id="nose" class="faceoverlap" src="Lab3_Images/nose_1.png" alt= "nose_1">
+
+</div>
+</div>
+<div class="ccButtons">
+<button id="facebtn" onclick="changeface()">Mouth Type 1</button>
+<button id="eyesbtn" onclick="changeeyes()">Eyes Type 1</button>
+<button id="nosebtn" onclick="changenose()">Nose Type 1</button>
+</div>
+
+
+<script src="face.js"></script>
+<script src="eyes.js"></script>
+<script src="nose.js"></script>
+<script>
+</script>
+</body>
+</html>

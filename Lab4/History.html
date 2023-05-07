@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>History</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+box-sizing: border-box;
+} 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 75%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 0px;
+  border-style: solid;
+  border-color: #191970;
+  border-width: 8px;
+  border-radius: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 518px;
+  font-size: 25px;
+}
+
+.left {
+  grid-area: left;
+}
+.middle {
+  grid-area: middle;
+}
+
+.right {
+  grid-area: right;
+}
+
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #191970;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+ 
+nav {
+ font-size: 25px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Prague: History</h1>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="Lab4.html">Home</a></li>
+		<li><a href="About.html">About</a></li>
+		<li><a href="BestAttractions.html">Best Attractions</a></li>
+		<li><a href="History.html">History</a></li>
+		<li><a href="Grading.html">Grading</a></li>
+	</ul>
+</nav>
+
+
+<div class="grid-container">
+ 
+  <div class="left" style="background-color:#aaa;">The first settlement at what is now Prague has been traced to the second half of the 9th century. The oldest building was Vyšehrad, set on a commanding right-bank hill.
+  </div>
+  <div class="middle" style="background-color:#bbb;">For thousands of years that portion of the Vltava’s course where Prague was to rise was crossed by trade routes linking northern and southern Europe.<img src="image.jpg" alt= "History" class="center">
+  </div>  
+  <div class="right" style="background-color:#ccc;">By the 14th century Prague had become a major central European city, with the Czech money minted at nearby Kutná Hora serving as the hard currency of the entire region.
+  </div>
+
+</div>
+
+</body>
+</html>

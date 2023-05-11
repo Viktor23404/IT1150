@@ -1,0 +1,14 @@
+body {
+	background color: Beige
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	border: solid Chocolate 5px
+}
+	
+.bigred{
+	font-size: 40px,
+	color: Firebrick;
+}
